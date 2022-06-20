@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test1">
+    <parameter name="browser" value="Browser01"></parameter>
+       <classes>
+             <class name="Runner.DellRunner"/>
+        </classes>
+    </test> 
+  <test name="Test2">
+    <parameter name="browser" value="Browser02"></parameter>
+       <classes>
+             <class name="Runner.DellRunner"/>
+        </classes>
+    </test> 
+</suite> <!-- Suite -->

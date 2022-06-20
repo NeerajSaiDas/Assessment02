@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-20T14:26:50 IST" name="Suite" finished-at="2022-06-20T14:27:31 IST" duration-ms="41091">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@3e8c3cb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@48bb62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-06-20T14:26:50 IST" name="Test1" finished-at="2022-06-20T14:27:09 IST" duration-ms="18687">
+      <class name="Runner.DellRunner">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:26:50 IST" name="beforeTest" finished-at="2022-06-20T14:26:54 IST" duration-ms="4349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Browser01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:26:54 IST" name="setUpClass" finished-at="2022-06-20T14:26:55 IST" duration-ms="483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@138f0661]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:26:55 IST" name="beforeClass" finished-at="2022-06-20T14:26:55 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:26:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-20T14:27:05 IST" duration-ms="10124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["HomePage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dell Website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:05 IST" name="afterMethod" finished-at="2022-06-20T14:27:05 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="methods()[pri:1, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:05 IST" name="methods" finished-at="2022-06-20T14:27:05 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methods -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:05 IST" name="afterMethod" finished-at="2022-06-20T14:27:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=methods status=SUCCESS method=CustomizedTestNG_Cucumber.methods()[pri:1, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="check()[pri:2, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:05 IST" name="check" finished-at="2022-06-20T14:27:05 IST" duration-ms="36" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at CustomizedTestNGCucumber.CustomizedTestNG_Cucumber.check(CustomizedTestNG_Cucumber.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:05 IST" name="afterMethod" finished-at="2022-06-20T14:27:06 IST" duration-ms="638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check status=FAILURE method=CustomizedTestNG_Cucumber.check()[pri:2, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:08 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Neeraj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123@#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="afterMethod" finished-at="2022-06-20T14:27:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alok]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A25%6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="afterMethod" finished-at="2022-06-20T14:27:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="afterMethod" finished-at="2022-06-20T14:27:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45@hnjk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="afterMethod" finished-at="2022-06-20T14:27:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@3e8c3cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:08 IST" name="afterClass" finished-at="2022-06-20T14:27:09 IST" duration-ms="893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.DellRunner@3e8c3cb]" started-at="2022-06-20T14:27:09 IST" name="tearDownClass" finished-at="2022-06-20T14:27:09 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.DellRunner -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-06-20T14:27:09 IST" name="Test2" finished-at="2022-06-20T14:27:31 IST" duration-ms="22351">
+      <class name="Runner.DellRunner">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:09 IST" name="beforeTest" finished-at="2022-06-20T14:27:19 IST" duration-ms="10669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Browser02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:19 IST" name="setUpClass" finished-at="2022-06-20T14:27:19 IST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@212fafd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:19 IST" name="beforeClass" finished-at="2022-06-20T14:27:20 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-20T14:27:29 IST" duration-ms="9334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["HomePage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dell Website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:29 IST" name="afterMethod" finished-at="2022-06-20T14:27:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="methods()[pri:1, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:29 IST" name="methods" finished-at="2022-06-20T14:27:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methods -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:29 IST" name="afterMethod" finished-at="2022-06-20T14:27:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=methods status=SUCCESS method=CustomizedTestNG_Cucumber.methods()[pri:1, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="check()[pri:2, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:29 IST" name="check" finished-at="2022-06-20T14:27:29 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at CustomizedTestNGCucumber.CustomizedTestNG_Cucumber.check(CustomizedTestNG_Cucumber.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:29 IST" name="afterMethod" finished-at="2022-06-20T14:27:30 IST" duration-ms="957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check status=FAILURE method=CustomizedTestNG_Cucumber.check()[pri:2, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Neeraj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123@#]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:30 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alok]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A25%6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="afterMethod" finished-at="2022-06-20T14:27:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="afterMethod" finished-at="2022-06-20T14:27:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:30 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="afterMethod" finished-at="2022-06-20T14:27:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="login" data-provider="ExcelData" finished-at="2022-06-20T14:27:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gaurav]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45@hnjk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="afterMethod" finished-at="2022-06-20T14:27:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=CustomizedTestNG_Cucumber.login(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Runner.DellRunner@48bb62] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:30 IST" name="afterClass" finished-at="2022-06-20T14:27:31 IST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.DellRunner@48bb62]" started-at="2022-06-20T14:27:31 IST" name="tearDownClass" finished-at="2022-06-20T14:27:31 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.DellRunner -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
